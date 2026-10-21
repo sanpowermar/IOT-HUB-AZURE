@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "author": "ESP32 Azure Water Tank Monitor",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultra1",
+      "top": -70,
+      "left": 220,
+      "attrs": {
+        "distance": "35"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "ultra1:VCC",
+      "esp:VIN",
+      "red",
+      []
+    ],
+    [
+      "ultra1:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "ultra1:TRIG",
+      "esp:5",
+      "green",
+      []
+    ],
+    [
+      "ultra1:ECHO",
+      "esp:18",
+      "blue",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

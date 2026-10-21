@@ -1,0 +1,1 @@
+az iot hub monitor-events --hub-name YOUR_HUB_NAME --device-id water-level-01
